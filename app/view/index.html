@@ -1,37 +1,43 @@
 <html lang='en'>
-    <head>
-        <meta charset='utf-8'>
-        <link rel='stylesheet' href='../static/style.css'>
-        <script src='../static/client.js'></script>
-    </head>
-    <body>
-        <div>
-            <div class='center'>
-                <div class='title'>DEMO YOUR ML MODEL</div>
-                <div class='content'>
-                    <div class='no-display'>
-                        <input id='file-input'
-                            class='no-display'
-                            type='file'
-                            name='file'
-                            accept='image/*'
-                            onchange='showPicked(this)'>
-                    </div>
-                    <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-                    <div class='upload-label'>
-                        <label id='upload-label'>No file chosen</label>
-                    </div>
-                    <div>
-                        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-                    </div>
-                    <div class='analyze'>
-                        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-                    </div>
-                    <div class='result-label'>
-                        <label id='result-label'></label>
-                    </div>
+
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+
+<body>
+    <div>
+        <div class='center'>
+            <div class='title'>Positive or Negative Review by AI? 👍👎</div>
+            <p>
+                After just type couple of words, AI will make up a movie review just like you put on a review site.
+            </p>
+            <div class='content'>
+                <div class='no-display'>
+                    <!-- <input id='file-input' class='no-display' type='text' name='text' accept='image/*'
+                        onchange='showPicked(this)'> -->
+                </div>
+                <form class='choose-file-button' type='text'>
+                    <input id="reviewText" type="text" name="firstname" value="Type your review:">
+                </form>
+                <!-- <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+                <label id='upload-label'>No file chosen</label>
+            </div> 
+            <div>
+                <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div> -->
+                <div class='analyze'>
+                    <button id='analyze-button' class='analyze-button' type='button'
+                        onclick='analyze()'>Analyze</button>
+                </div>
+                <div class='result-label'>
+                    <label id='result-label'></label>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
